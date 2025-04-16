@@ -1,0 +1,305 @@
+body {
+    font: 15px/1.2 just sans, helvetica sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Global */
+
+.container{
+    width: 85%;
+    margin: auto;
+    overflow:hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+/*Subsribe Button*/
+
+.button_one{
+    height: 36px;
+    background: rgb(0, 134, 0);
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+/*This is for dark box shape around text for About Us*/
+
+.dark{
+    padding:15px;
+    background: rgb(53, 63, 58);#293a2e;
+    color: beige;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+
+/*header*/
+
+header{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:  rgb(0, 134, 0) 4px solid;
+}
+
+header a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    text-transform:
+    font-size: 13px;
+}
+
+header.highlight, .current a{
+    color: rgb(0, 164, 57);
+    font-weight: bold;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding:0 20px 0 20px;
+}
+
+header #brand{
+    float:left;
+}
+
+/*logo */
+
+header #brand img{
+    position: relative;
+    width: 120px;
+
+    
+}
+/* Optional: Change logo style on hover */
+
+.logo img:hover {
+    opacity: 0.7;
+    
+}
+
+header nav{
+    float:right;
+    margin-top: 8px;
+}
+
+header a:hover{
+    color: rgb(0, 47, 25);
+    font-weight: bold;
+}
+
+/*showcase area for main banner*/
+
+#showcase{
+    min-height: 507px;
+    background: url('./img/cover.png') no-repeat 0 -400px;
+    text-align: center;
+    color:#fffccd;
+}
+
+#showcase h1{
+    margin-top: 200px;
+    font-size:55px;
+    margin-bottom: 5px;
+}
+
+#showcase p{
+    font-size: 15px;
+}
+
+/*cover - for services banner*/
+
+#cover{
+    min-height: 507px;
+    background: url('./img/newcover.png') no-repeat 0 -400px;
+    text-align: center;
+    color:#fffccd;
+}
+
+
+#cover h1{
+    margin-top: 200px;
+    font-size:55px;
+    margin-bottom: 5px;
+}
+
+#cover p{
+    font-size: 15px;
+}
+
+/*Newsletter - box button*/
+
+#newsletter{
+    padding:15px;
+    color:#fcffdd;
+    background-color: rgb(53, 63, 58);
+}
+
+#newsletter h1{
+    float:left;
+}
+
+#newsletter form{
+    float:right;
+    margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height:25px;
+    width:250px;
+}
+
+/*Newtext for services tab*/
+#Newtext{
+    text-align: center;
+}
+
+#Newtext h1{
+    font-size: 30px;
+    color: rgb(0, 93, 56);
+}
+
+#Newtext p{
+    color: rgb(0, 0, 0);
+}
+
+/*Boxes*/
+
+#boxes{
+    margin-top: 28px;  
+
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+  
+}
+/*Animation*/
+
+#boxes .box img{
+    max-width:300px;
+    border-radius: 3px;
+    transition: transform 0.4s ease;
+    
+}
+
+.box img:hover{
+    transform:scale(1.2);
+
+}
+
+
+/*Servebox*/
+
+#servebox{
+    margin-top: 28px;
+
+}
+
+#servebox .servebox{
+    float: left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+}
+
+.servebox img{
+    max-width:150px;
+}
+
+
+/*sidebar*/
+
+aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+}
+
+
+/*Main-col*/
+
+article#main-col{
+    float:left;
+    width:65%;
+}
+
+
+footer{
+    padding: 50px;
+    margin-top: 28px;
+    color: #ffffff;
+    background-color: rgb(53, 63, 58);
+    text-align: center;
+    border-top:  rgb(0, 134, 0) 4px solid;
+}
+
+.box p{
+    font-size: 11px;
+    line-height: 1.6;
+   
+}
+
+.box h3{
+    color: rgb(0, 47, 25);
+}
+
+
+/*Media Queries - To Make responsive on mobile*/
+
+@media (max-width:768px){
+    header #brand,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    #servebox .servebox,
+    article#main-col,
+    aside#sidebar{
+
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 120px;
+        padding-bottom: 20px;
+    }
+
+    #cover h1{
+        margin-top: 150px;
+        padding-bottom: 20px;
+    }
+
+    #newsletter button{
+        display:block;
+        width:100%;
+    }
+    
+    #newsletter form input[type="email"]{
+        width:100%;
+        margin-bottom:5px;
+    }
+
+}
+
+
